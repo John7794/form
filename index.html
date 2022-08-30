@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/fonts.css">
+    <link rel="stylesheet" href="style/style-0.css" media="(min-width: 0px)">
+    <link rel="stylesheet" href="style/style-600.css" media="(min-width: 600px)">
+    <link rel="stylesheet" href="style/style-1200.css" media="(min-width: 1200px)">
+    <title>Формуляр учасника конференції</title>
+  </head>
+  <body>
+    <main>
+      <h1>Формуляр учасника конференції</h1>
+      <form id="form" method="post" novalidate>
+        <div class="group m-col">
+          <div class="field">
+            <label for="theme-report">Тема доповіді:</label>
+            <input id="theme-report" name="theme_report" type="text">
+            <div class="err-msg"></div>
+          </div>
+          <div class="field">
+            <label for="name-report">Назва доповіді:</label>
+            <input id="name-report" name="name_report" type="text">
+            <div class="err-msg"></div>
+          </div>
+      </div>
+      <fieldset>
+          <legend>Відомості про автора</legend>
+          <div class="group m-col">
+            <div class="field">
+              <label for="surname">Прізвище:</label>
+              <input id="surname" name="surname" type="text">
+              <div class="err-msg"></div>
+            </div>
+            <div class="field">
+              <label for="name">Ім'я:</label>
+              <input id="name" name="name" type="text">
+              <div class="err-msg"></div>
+            </div>
+            <div class="field">
+              <label for="patronymic">По батькові:</label>
+              <input id="patronymic" name="patronymic" type="text">
+              <div class="err-msg"></div>
+            </div>
+          </div>
+          <div class="group m-col">
+            <div class="field">
+                <label for="job">Місце роботи / навчання:</label>
+                <input id="job" name="job" type="text">
+                <div class="err-msg"></div>
+            </div>
+            <div class="field">
+              <div class="input-wrapper">
+                <label>Посада:</label>
+                <input readonly="readonly" id="job-post" name="job_post" type="text">
+                <div class="arrow"></div>
+              </div>
+              <div class="bottom-block">
+                <div class="err-msg"></div>
+                <ul class="list d-none">
+                  <li>аспірант</li>
+                  <li>асистент</li>
+                  <li>викладач</li>
+                  <li>директор</li>
+                  <li>проректор</li>
+                  <li>ректор</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="group m-col">
+              <div class="field">
+                <div class="input-wrapper">
+                  <label>Науковий ступінь:</label>
+                  <input readonly="readonly" id="degree" name="degree" type="text" list="degree-list">
+                  <div class="arrow"></div>
+                </div>
+                <div class="bottom-block">
+                  <div class="err-msg"></div>
+                  <ul class="list d-none">
+                    <li>кандидат архітектури</li>
+                    <li>кандидат мистецтвознавства</li>
+                    <li>доктор архітектури</li>
+                    <li>доктор мистецтвознавства</li>
+                    <li>доктор філософії</li>
+                    <li>доктор наук</li>
+                    <li>немає</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="field">
+                <div class="input-wrapper">
+                  <label>Вчене звання:</label>
+                  <input readonly="readonly" id="rank" name="rank" type="text">
+                  <div class="arrow"></div>
+                </div>
+                <div class="bottom-block">
+                  <div class="err-msg"></div>
+                  <ul class="list d-none">
+                    <li>старший викладач / дослідник</li>
+                    <li>доцент</li>
+                    <li>професор</li>
+                    <li>немає</li>
+                  </ul>
+                </div>
+            </div>
+          </div>
+          <div class="group o-col">
+            <div class="field">
+              <label for="address">Адреса проживання:</label>
+              <input id="address" name="address" type="text">
+              <div class="err-msg"></div>
+            </div>
+          </div>
+          <div class="group m-col">
+            <div class="field">
+              <label for="phone">Телефон:</label>
+              <input id="phone" name="phone" type="tel">
+              <div class="err-msg"></div>
+            </div>
+            <div class="field">
+              <label for="email">Email:</label>
+              <input id="email" name="email" type="email">
+              <div class="err-msg"></div>
+            </div>
+          </div>
+          <div class="group o-col">
+            <div class="field">
+              <label for="thesis-file" class="file">Завантажте Вашу доповідь:</label>
+              <input id="thesis-file" type="file" accept="application/msword">
+              <div class="err-msg"></div>
+            </div>
+          </div>
+        </fieldset>
+        <button id="btn" class="btn btn-primary">Відправити</button>
+      </form>
+      <div id="app"></div>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,9 @@
+@font-face {
+    font-family: Rubic-bold;
+    src: url('../fonts/Rubik-Bold.ttf');
+}
+
+@font-face {
+    font-family: Rubic-normal;
+    src: url('../fonts/Rubik-Regular.ttf');
+}

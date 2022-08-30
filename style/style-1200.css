@@ -1,0 +1,11 @@
+body {
+    padding: 2vh 0px 10vh;
+}
+
+.m-col {
+    flex-direction: row;
+}
+
+form {
+    padding: 30px;
+}

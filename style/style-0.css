@@ -1,0 +1,167 @@
+body {
+    background-color: aliceblue;
+}
+
+h1 {
+    margin-bottom: 25px;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+h1,
+label,
+legend,
+.list {
+    font-family: 'Rubic-normal';
+}
+
+label {
+    display: block;
+    width: 100%;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+input {
+    display: block;
+    border: none;
+    border-bottom: solid 1px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 35px;
+    font-size: 1em;
+}
+
+input[readonly="readonly"] {
+    cursor: pointer;
+}
+
+.o-col label:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+legend {
+    width: 100%;
+    margin-bottom: 35px;
+    margin-top: 0px;
+    font-size: 1.25em;
+    text-align: center;
+}
+
+fieldset {
+    padding: 0px;
+    border: none;
+}
+
+form {
+    margin: auto;
+    border-radius: 15px;
+    box-sizing: border-box;
+    padding: 20px;
+    width: 90vw;
+    background-color: white;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.15);
+}
+
+button {
+    margin-top: 30px;
+    padding: 10px;
+    border: none;
+    border-radius: 7px;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    color: white;
+    background: #0d6efd;
+    cursor: pointer;
+}
+
+.group:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.m-col {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.o-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.field {
+    width: 100%;
+}
+
+.field:not(:last-child) {
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+.bottom-block {
+    position: relative;
+}
+
+.error {
+    border-bottom-color: red;
+}
+
+.err-msg {
+    margin-top: 5px;
+    height: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+    color: red;
+}
+
+.list {
+    position: absolute;
+    top: -5px;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    list-style: none;
+    background-color: white;
+    z-index: 100;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.15);
+}
+
+.d-none {
+    display: none;
+}
+
+li {
+    padding: 10px 0px 10px 10px;
+    z-index: 1000;
+}
+
+li:hover {
+    color: white;
+    background: #0d6efd;
+    cursor: pointer;
+}
+
+.input-wrapper {
+    position: relative;
+}
+
+.arrow {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    height: 30px;
+    width: 30px;
+    background: center/contain url('../img/select-arrow.svg') no-repeat;
+    cursor: pointer;
+    transition: transform .15s;
+}
+
+.rotated {
+    transform: rotate(180deg);
+}
+
+.m-col {
+    flex-direction: column;
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../style/fonts.css">
+        <link rel="stylesheet" href="../style/style-0.css" media="(min-width: 0px)">
+        <link rel="stylesheet" href="../style/style-600.css" media="(min-width: 600px)">
+        <link rel="stylesheet" href="../style/style-1200.css" media="(min-width: 1200px)">
+        <title>Conference participant form</title>
+    </head>
+    <body>
+        <main>
+            <h1>Conference participant form</h1>
+            <form action="" novalidate>
+                <div class="group m-col">
+                    <div class="field">
+                        <label for="name-report">Title of the report:</label>
+                        <input id="name-report" type="text">
+                        <div class="err-msg"></div>
+                    </div>
+                    <div class="field">
+                        <label for="theme-report">Topic of the report:</label>
+                        <input id="theme-report" type="text">
+                        <div class="err-msg"></div>
+                    </div>
+                </div>
+                <fieldset>
+                    <legend>Information about the author</legend>
+                    <div class="group m-col">
+                        <div class="field">
+                            <label for="surname">Surname:</label>
+                            <input id="surname" type="text">
+                            <div class="err-msg"></div>
+                        </div>
+                        <div class="field">
+                            <label for="name">Name:</label>
+                            <input id="name" type="text">
+                            <div class="err-msg"></div>
+                        </div>
+                        <div class="field">
+                            <label for="patronymic">Patronymic:</label>
+                            <input id="patronymic" type="text">
+                            <div class="err-msg"></div>
+                        </div>
+                    </div>
+                    <div class="group m-col">
+                        <div class="field">
+                            <div tabindex="0" class="input-wrapper">
+                                <label tabindex="0">Scientific degree:</label>
+                                <input readonly="readonly" id="degree" type="text" list="degree-list">
+                                <div tabindex="0" class="arrow"></div>
+                            </div>
+                            <div class="bottom-block">
+                                <div class="err-msg"></div>
+                                <ul class="list d-none">
+                                    <li>Doctor of Philosophy</li>
+                                    <li>Doctor of Science</li>
+                                    <li>none</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div tabindex="0" class="input-wrapper">
+                                <label tabindex="0">Academic rank:</label>
+                                <input readonly="readonly" id="rank" type="text">
+                                <div tabindex="0" class="arrow"></div>
+                            </div>
+                            <div class="bottom-block">
+                                <div class="err-msg"></div>
+                                <ul class="list d-none">
+                                    <li>associate professor</li>
+                                    <li>senior Researcher</li>
+                                    <li>professor</li>
+                                    <li>none</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group m-col">
+                        <div class="field">
+                            <label for="job">Place of work / study:</label>
+                            <input id="job" type="text">
+                            <div class="err-msg"></div>
+                        </div>
+                        <div class="field">
+                            <div tabindex="0" class="input-wrapper">
+                                <label tabindex="0">Position:</label>
+                                <input readonly="readonly" id="job-post" type="text">
+                                <div tabindex="0" class="arrow"></div>
+                            </div>
+                            <div class="bottom-block">
+                                <div class="err-msg"></div>
+                                <ul class="list d-none">
+                                    <li>postgraduate</li>
+                                    <li>assistant</li>
+                                    <li>lecturer</li>
+                                    <li>director</li>
+                                    <li>vice rector</li>
+                                    <li>rector</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group o-col">
+                        <div class="field">
+                            <label for="address">Residential Address</label>
+                            <input id="address" type="text">
+                            <div class="err-msg"></div>
+                        </div>
+                    </div>
+                    <div class="group m-col">
+                        <div class="field">
+                            <label for="phone">Phone</label>
+                            <input id="phone" type="tel">
+                            <div class="err-msg"></div>
+                        </div>
+                        <div class="field">
+                            <label for="email">Email</label>
+                            <input id="email" type="email">
+                            <div class="err-msg"></div>
+                        </div>
+                    </div>
+                    <div class="group o-col">
+                        <div class="field">
+                            <label for="thesis-file" class="file">Load your article</label>
+                            <input id="thesis-file" type="file" accept="application/msword">
+                            <div class="err-msg"></div>
+                        </div>
+                    </div>
+                </fieldset>
+                <button class="btn btn-primary">Send</button>
+            </form>
+        </main>
+        <script src="../script.js"></script>
+    </body>
+</html>
