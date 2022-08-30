@@ -19,7 +19,7 @@ function testGS(e) {
         'email'
     ]
 
-    for ( var i = 0; i < len - 1; i++ ) {
+    for ( var i = 0; i < len - 2; i++ ) {
         if(!props[i]) continue;
         body[props[i]] = this.elements[i].value;
     }
