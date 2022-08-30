@@ -20,6 +20,7 @@ function testGS(e) {
     ]
 
     for ( var i = 0; i < len - 1; i++ ) {
+        if(!props[i]) continue;
         body[props[i]] = this.elements[i].value;
     }
 
